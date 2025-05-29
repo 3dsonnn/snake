@@ -6,7 +6,7 @@
 #    By: efinda <efinda@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/19 19:25:46 by efinda            #+#    #+#              #
-#    Updated: 2025/05/24 05:10:36 by efinda           ###   ########.fr        #
+#    Updated: 2025/05/29 19:41:09 by efinda           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = snake
 
 SRC =	src/main.c							\
 		src/init_snake.c					\
+		src/game_over.c						\
 		src/setup/mlx.c						\
 		src/setup/setup_game.c				\
 		src/destroy.c						\

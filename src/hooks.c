@@ -6,7 +6,7 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 19:17:12 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/24 08:49:19 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 19:38:52 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,6 @@ void	my_mlx_hooks(t_snake *snake)
 {
 	mlx_hook(snake->win, 2, 1L << 0, my_mlx_key_press, snake);
 	mlx_hook(snake->win, 17, 1L << 17, my_mlx_close, snake);
+	snake->last_time = get_current_time();
 	mlx_loop_hook(snake->mlx, my_mlx_loop_hook, snake);
 }

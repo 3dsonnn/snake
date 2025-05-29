@@ -6,7 +6,7 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 19:13:52 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/24 11:38:00 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 19:43:34 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,5 +81,4 @@ void	setup_game(t_snake *snake)
 	snake->total_tiles = (t_point){snake->win_size.x / TILE, snake->win_size.y / TILE};
     setup_tiles(snake);
 	set_sprites(snake, &snake->collectible, &snake->obstacle);
-	snake->last_time = get_current_time();
 }

@@ -6,7 +6,7 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 19:26:22 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/24 05:17:40 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 19:42:05 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,19 @@
 # define RED 0xFF0000
 # define GREEN 0x00FF00
 # define BLUE 0x0000FF
+
+// int key = 0;
+
+// if (pos.key != 0)
+// 	return ;
+// static int i;
+// if ()
+// pos.key =  i;
+// i++;
+// RIGHT
+// LEFT
+// ...
+
 
 // INIT_AND_FREE
 void				init_snake(t_snake *snake);
@@ -90,5 +103,8 @@ void				body_add(t_body **head, t_body *new_body);
 // UTILS
 unsigned long long	get_current_time(void);
 void				clear_terminal(void);
+
+// GAME_OVER
+void				game_over(t_snake *snake, char  *reason);
 
 #endif

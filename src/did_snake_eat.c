@@ -6,7 +6,7 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 08:06:53 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/24 09:31:40 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 19:42:47 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,11 @@
 static void	snake_ate_herself_or_obstacle(t_snake *snake, char id)
 {
 	if (id == 'H')
-		destroy_snake(snake, "YOU ATE YOURSELF, GAY\n", 0);
+		game_over(snake, "YOU ATE YOURSELF, GAY");
+		// destroy_snake(snake, "YOU ATE YOURSELF, GAY\n", 0);
 	else
-		destroy_snake(snake, "YOU ATE AN OBSTACLE, GAY\n", 0);
+		game_over(snake, "YOU ATE AN OBSTACLE, GAY");
+		// destroy_snake(snake, "YOU ATE AN OBSTACLE, GAY\n", 0);
 }
 
 static void	snake_ate_collectible(t_snake *snake, t_point *index, t_tile *ref)
